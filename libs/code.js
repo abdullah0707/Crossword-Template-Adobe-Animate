@@ -499,7 +499,7 @@ function nextQ()
 		currentQ++;
 		exportRoot["ans" + currentQ].gotoAndStop(0);
 		resetFun();
-		setTimeout(hideFB, 1000);
+		setTimeout(hideFB, 100);
 	}
 }
 
@@ -510,10 +510,10 @@ function retryFN()
 	stopAllSounds();
 	clickSd.play();
 	exportRoot.gotoAndStop("quz" + currentQ);
-	// currentQ = 1;
 	exportRoot["ans" + currentQ].gotoAndStop(0);
-	resetFun();
 	hideFB();
+	resetFun();
+	// currentQ = 1;
 }
 
 function resetFun()
