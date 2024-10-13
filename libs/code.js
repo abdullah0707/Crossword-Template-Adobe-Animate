@@ -473,7 +473,7 @@ function confirmFN()
 			exportRoot["rightFB"].playV = true;
 			exportRoot["rightFB"].alpha = 1;
 			exportRoot["rightFB"].gotoAndPlay(0);
-		}, 3000);
+		}, 900);
 	} else
 	{
 		attempts++;
@@ -499,7 +499,7 @@ function nextQ()
 		currentQ++;
 		exportRoot["ans" + currentQ].gotoAndStop(0);
 		resetFun();
-		setTimeout(hideFB, 100);
+		hideFB();
 	}
 }
 
